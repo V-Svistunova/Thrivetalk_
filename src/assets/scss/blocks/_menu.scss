@@ -1,0 +1,42 @@
+.menu {
+  $menu: &;
+
+  z-index: 5;
+
+  &__list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 6rem);
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+
+    list-style-type: none;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #22356F;
+
+    #{$menu}__item {      
+      padding: 15px 0; 
+
+      &:hover {
+        transform: translateY(-3px);
+        -webkit-transform: translateY(-3px);
+        -moz-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+        -o-transform: translateY(-3px);
+      }
+
+      #{$menu}__link {      
+        text-decoration: none;        
+        color: #22356F;
+      }
+    }
+
+    #{$menu}__item--active {
+      border-bottom:  1px solid #22356F;
+    }
+  }
+}
