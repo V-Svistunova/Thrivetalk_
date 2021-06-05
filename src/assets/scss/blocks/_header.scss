@@ -102,7 +102,6 @@
       position: absolute;
       right: -15rem;
       top: -17rem;
-      z-index: 3;
       width: 810px;
       height: 550px;
       background-color: #EDFDFF;
@@ -111,15 +110,18 @@
     }
   
     &--primary {
-      position: absolute;
-      top: -5rem;
-      left: 0;
-      z-index: 4;
-      width: 1126px;
-      height: 750px;
+      position: relative;
+      top: -50px;
+      right: -12%;
+      width: 645px;
+      height: 678px;
       background-image:url(../images/header__img--primary.png);
       background-repeat: no-repeat;
-      background-position: 16% top;
-    }
+      border-radius: 450px 230px / 450px 230px;
+      -webkit-border-radius: 450px 230px / 450px 230px;
+      -moz-border-radius: 450px 230px / 450px 230px;
+      -ms-border-radius: 450px 230px / 450px 230px;
+      -o-border-radius: 450px 230px / 450px 230px;
+}
   }
 }
