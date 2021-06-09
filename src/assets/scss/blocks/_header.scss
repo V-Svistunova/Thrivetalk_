@@ -10,6 +10,7 @@
   overflow: visible;
 
   &__top {
+    
     grid-column: 1/3;
     height: 9rem;
     display: grid;
@@ -96,7 +97,6 @@
   }
 
   &__img {
-    position: relative;
     
     &--secondary {
       position: absolute;
@@ -122,6 +122,6 @@
       -moz-border-radius: 450px 230px / 450px 230px;
       -ms-border-radius: 450px 230px / 450px 230px;
       -o-border-radius: 450px 230px / 450px 230px;
-}
+    }
   }
 }
