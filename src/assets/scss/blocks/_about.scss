@@ -1,0 +1,38 @@
+.about {
+  height: 480px;
+  text-align: center;
+
+  &__text {
+    position: relative;
+    max-width: 590px;
+    width: 100%;
+    font-family: 'EncodeSans-Bold', sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.005em;
+    color: #22356F;
+    margin: 15rem auto 7.5rem;
+
+    &::before {
+      position: absolute;
+      content: "about us";
+      width: 93px;
+      top: 3%;
+      left: -50%;
+      font-size: 16px;
+      line-height: 23px;
+      letter-spacing: 0.06em;
+      color: #22356F;
+      text-transform: uppercase;
+    }
+  }
+
+  &__link {
+    font-family: 'EncodeSans-Thin', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    color: rgba(34, 53, 111, 0.5);
+    text-transform: uppercase;
+  }
+}
