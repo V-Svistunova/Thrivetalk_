@@ -2,7 +2,7 @@
   //height: 100%;
   height: 604px;
   display: grid;
-  grid-template-columns: auto 525px;      
+  grid-template-columns: auto 36%;      
   background: #62D0DF;
 
   &__wrapper {
@@ -45,8 +45,6 @@
   }
 
   &__img {
-    background-image: url(../images/why__img.png);
-    background-repeat:no-repeat;
-    background-position: center;
+    background: url(../images/why__img.png) no-repeat left;
   }
 }
