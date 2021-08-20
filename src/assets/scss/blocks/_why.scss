@@ -4,6 +4,10 @@
   grid-template-columns: auto 36%;      
   background: #62D0DF;
 
+  @media (max-width: 568px)  {
+    height: max-content;
+  }
+
   &__wrapper {
     max-width: 55.5rem;
     width: 100%;
@@ -13,6 +17,16 @@
   &__block {
     display: grid;
     grid-template-rows: 1fr 1fr;
+
+    @media (max-width: 768px)  {
+      margin-left: 15px;
+      grid-template-rows: 0.5fr 1fr;
+    }
+
+    @media (max-width: 468px)  {
+      
+      grid-template-rows: 0.25fr 1fr;
+    }
 
     &-title {
       font-family: 'EncodeSans-Bold', sans-serif;
