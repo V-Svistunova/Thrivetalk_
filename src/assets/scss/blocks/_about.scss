@@ -4,6 +4,12 @@
   text-align: center;
   padding-top: 15rem;
 
+  @media (max-width: 468px)  {      
+    height: max-content;
+    max-height: max-content;
+    padding: 10rem 0;
+  }
+
   &__text {
     position: relative;
     max-width: 590px;
