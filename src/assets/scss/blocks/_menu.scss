@@ -1,7 +1,10 @@
 .menu {
   $menu: &;
 
-  z-index: 5;
+  @media (max-width: 568px)  {
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
 
   &__list {
     position: relative;
@@ -18,8 +21,10 @@
     line-height: 16px;
     color: #22356F;
 
+    
+
     #{$menu}__item {      
-      padding: 15px 0; 
+      padding: 15px 0;
 
       &:hover {
         transform: translateY(-3px);
